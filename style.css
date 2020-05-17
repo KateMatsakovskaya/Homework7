@@ -176,36 +176,37 @@ header{
     text-transform: uppercase;
     padding-top: 1vh;
 }
-.cards{
+.container2 .cards{
     display: flex;
     justify-content: space-between; 
     flex-wrap: wrap;
     padding-top: 100px;   
     padding-bottom: 110px;
 }
-.cards .item{
+.container2 .cards .item{
     width: 32%;  
     position: relative; 
     margin-top: 0px; 
     cursor: pointer;
 }
-.cards .item img{
+.container2 .cards .item img{
     display: block;
     max-width: 100%;
     height: auto;    
-    margin-top: 0;
+    margin-top: 0;    
 }
-.item .caption{
+.container2 .item .caption{
     width: 30%;
     padding: 20px;
-    margin-left: 30%;
+    margin-left: 35%;
     content: #ffffff;
     position: absolute;
     bottom: 0;
     left: 0;
     text-align: center;
+    cursor: pointer;
 }
-.item .caption i, .item .caption span{
+.container2 .item .caption i, .item .caption span{
     display: block;
     opacity: 0;
     position: relative;
@@ -213,26 +214,27 @@ header{
     transition-delay: 0s;
     color: #ffffff;
 }
-.item .caption .info{
+.container2 .item .caption .info{
     line-height: 1.2;    
     margin-bottom: 100px;
     font-size: 18px;
     color: #ffffff;
 }
-.item:focus i, .item:focus .info,
-.item:hover i, .item:hover .info{
+.container2 .item:focus i, .container2 .item:focus .info,
+.container2 .item:hover i, .container2 .item:hover .info{
     opacity: 1;
 }
-.cards .item img:focus, .cards .item img:hover{    
+.container2 .cards .item img:focus, .container2 .cards .item img:hover{    
     box-shadow: 5px 5px #95e1d3;    
     margin-top: -5px;      
     transition: 1s;
 }
-.item i:focus, .item i:hover{
+.container2 .item i:focus, .container2 .item i:hover{
     transition-delay: 0.2s;
+    
 }
-.item .info:focus, .item .info:hover{
-    transition-delay: 0.3s;
+.container2 .item .info:focus, .container2 .item .info:hover{
+    transition-delay: 0.3s;    
 }
 .grid_cards{
     display: grid;
